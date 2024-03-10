@@ -3,7 +3,7 @@
 The falcon_host_search_site.py script offers a way one could publish an internal web page for end users to search and confirm their workload is secured by a Falcon sensor.
 
 ## Caution!
-This solution is a potential method of discovery of your managed Falcon environment. It is highly recommended that this solution be restricted within your organization's network and restricted from the public internet. One might use internal network rules, custom authentication restricted to your staff, or other methods as suitable to your environment.
+This solution is a potential method of discovery of your managed Falcon environment. It is highly recommended that this solution be secured within your organization's network or at the very least restricted from the public internet. One might use internal network rules, custom authentication restricted to your staff, or other methods as suitable to your environment.
 
 ## Benefits
 Primary benefits include time saved for internal customers submitting tickets/requests for validation, as well as the time needed for Falcon support staff to search, capture evidence, and respond to customers.
