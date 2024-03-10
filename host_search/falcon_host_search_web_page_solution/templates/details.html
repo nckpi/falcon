@@ -1,0 +1,39 @@
+<!--Rudimentary results page to output search results-->
+<html>
+<body style="size:1040px;height:960px;background:url('./static/company_image.jpg') no-repeat; background-size: cover">
+<title> Host Lookup details</title>
+<ul style="list-style-type: none;">
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+</style>
+
+<!--Here we iterate over every item returned-->
+<body>
+    <table>
+        <tbody>
+        {% for item in details %}
+        <!--Test if the for item needs to go beneath the header section-->
+            <tr>
+                <th>HostName</th>
+                <th>Found?</th>
+                <th>Agent Version</th>
+                <th>Lack Check-in Time</th>
+                <th>First Check-in Time</th>
+                <th>Tags</th>
+                <th>Customer ID</th>
+                <th>Cloud Instance ID</th>
+                <th>Unique Agent ID</th>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</ul>
+</html>
