@@ -1,0 +1,105 @@
+<html>
+    <title>CrowdStrike Falcon Self-Service Portal</title>
+    <body
+        style="
+            size: 1040px;
+            height: 960px;
+            background: url('./static/company_logo.jpg') no-repeat;
+            background-size: cover;
+        "
+    >
+
+        <font face="calibri">
+            <header>
+                <center>
+                    <h1 style="color: black">
+                        CrowdStrike Falcon Self-Service Portal
+                    </h1>
+                </center>
+            </header>
+            <form
+                method="post"
+                action="http://127.0.0.1:8000/submit"
+                enctype="multipart/form-data"
+            >
+                <center>
+                    <h2 style="color: black">Enter Hostnames and/or Instance IDs Here</h2>
+                    <textarea
+                        name="textarea"
+                        style="width: 500px; height: 200px"
+                        ></textarea>
+                        <h1><input type="submit" value="Submit" /></h1>
+                </center>
+        </form>
+        <style>
+            footer {
+                padding: 15px;
+            }
+        </style>
+      <h1>Welcome to our Self-Service Host Lookup Portal!</h1>
+
+      <p><b>What does this tool do?</b></p>
+      <p>
+        Provides an easy to use validation that CrowdStrike Falcon is installed
+        and reporting in from your workstations and/or servers.
+      </p>
+
+      <p><b>How does it work?</b></p>
+      <p>
+        Simply enter your hostnames and/or cloud instance IDs in the box above, one
+        per line, and click the Submit button to get your results.
+      </p>
+
+      <p><b>How long should a search take?</b></p>
+      <p>
+        Typically results are returned in seconds, but larger lists (hundreds or
+        more) may take a few minutes. Maximum search results are capped at 5000
+        hosts, with duplicate name matches counting against against that limit.
+        For example, searching for "test-system" might return "test-system1" and
+        "test-system2" and count as two for the 5000 limit. Hitting the limit
+        will prompt you to try with fewer names, so it is not left for you to
+        guess. This is a vendor API limitation.
+      </p>
+
+      <p><b>Does it only work for certain devices?</b></p>
+      <p>
+        We can report on anything the Falcon sensor is installed on, as long as
+        you have a hostname or instance ID. Servers, desktops, laptops, Windows,
+        Linux, Mac, it is all here.
+      </p>
+
+      <p><b>What if my system isn't found?</b></p>
+      <p>
+        If the Falcon sensor is installed on a hosts and you cannot find
+        it here, please reach out to the support team and we can work to
+        determine why and fix it with you.
+      </p>
+
+      <p><b>Are there any issues or catches?</b></p>
+      <ul>
+        <li>
+          Due to their nature and how they report their own names, AWS hostnames
+          might not be found or may result in confusing duplicates from re-use
+          of IP addresses. Please try to use AWS Instance IDs when available 
+          (e.g., i-0a3b12e2c12d12leo) to ensure unique matches.
+        </li>
+        <li>
+          Fully Qualified Domain Names (FQDNs) could be hit-or-miss so we
+          implemented logic to automatically remove domains from hostnames you
+          enter, saving you time in 'sanitizing' a spreadsheet of names. If
+          you find that you have a match for a system but it uses domain names
+          that don't make sense to you, separate verification is suggested.
+        </li>
+      </ul>
+
+      <h2>Support Contacts</h2>
+      <p>
+        [Support Team methods of contact here]
+      </p>
+      <p></p>
+      <p>
+
+      <footer></footer>
+    </font>
+  </body>
+</html>
