@@ -15,5 +15,6 @@ A secondary benefit is it can negate the desire of some internal customers to re
 - FalconPy SDK
 - Python 3.7 or later is required for the FalconPy SDK. The script was initially written and tested with Python 3.10. Please keep this in mind for compatibility of changes in the future.
 - Flask is required for this iteration which operates through a web page.
+- The 'templates' folder must be in the same directory where you store the Python script. This allows Flask to locate the HTML files within.
 
 ## More documentation to come
