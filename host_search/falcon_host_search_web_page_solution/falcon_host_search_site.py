@@ -152,7 +152,7 @@ def cs_detail_search(falcon, aid_list, host_info_list):
     in batches of 5000 we want to dissuade users from reckless and costly partial searches"""
 
     if len(aid_list) == 0:
-        host_info_list.apppend(
+        host_info_list.append(
             "Names provided were not found managed in CrowdStrike Falcon. "
             "If some names reported a transient API error then please try them in a new search."
         )
