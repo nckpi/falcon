@@ -1,5 +1,5 @@
 """
-This sript takes a list of hostnames and/or cloud instance IDs, queries the
+This script takes a list of hostnames and/or cloud instance IDs, queries the
 CrowdStrike APIs for them, and returns the following:
 
 Hostname - The hostname or instance ID of the system as reported to Falcon

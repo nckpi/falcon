@@ -21,3 +21,6 @@ A secondary benefit is it can negate the desire of some internal customers to re
 The details.html file is not in a production-ready state. That file still needs to be recreated from a past implementation.
 
 ## More documentation to come
+
+## Credit
+Collaboration on development and refinement of the host search code was performed in partnership with https://github.com/hayden-cardwell
